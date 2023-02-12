@@ -16,6 +16,7 @@ let pass = document.getElementById('password').value
        
      }else if(user == usuario.userEmail && pass == usuario.userPass){
         console.log('logado')
+        localStorage.setItem(user, pass);
      }else{
         console.log('credenciais incorretas')       
      }
